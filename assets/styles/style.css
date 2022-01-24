@@ -120,3 +120,47 @@ section {
 [class$="-square"] {
   border-radius: 5px;
 }
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .content {
+  top: unset;
+  width: 70%;
+  height: 80%;
+}
+.about .content img {
+  position: absolute;
+  top: unset;
+  left: -18%;
+  transform: scale(1.06);
+}
+.about-text {
+  width: 72%;
+  margin-left: 20%;
+  text-align: justify;
+}
+.about-text h2 {
+  position: absolute;
+  top: 9%;
+  font-size: 40px;
+  border-bottom: 4px solid #34495e;
+}
+.download_cv {
+  font-size: 20px;
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #34495e;
+  color: #dddedf;
+  box-shadow: 5px 5px 10px #797a7a, -5px -5px 10px #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
