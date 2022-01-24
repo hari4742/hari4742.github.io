@@ -1,0 +1,122 @@
+:root {
+  --background-color: #dddedf;
+  --neumorphism-shadow: 5px 5px 14px #aaabac, -5px -5px 14px #ffffff;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #34495e;
+}
+body {
+  background-color: var(--background-color);
+  display: none;
+}
+ul {
+  list-style: none;
+}
+nav {
+  width: 25%;
+  height: 100vh;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+nav ul li {
+  margin: 15px;
+  box-shadow: var(--neumorphism-shadow);
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.fa-toggle-off {
+  font-size: 25px;
+  color: rgb(36, 34, 34);
+  margin-bottom: 20px;
+}
+nav ul li .fas {
+  color: #3f72af;
+}
+nav ul li:hover {
+  transition: 0.4s;
+  background: linear-gradient(145deg, #c7c8c9, #eceeef);
+  box-shadow: 21px 21px 35px #acadae, -21px -21px 35px #ffffff;
+}
+
+section {
+  height: 100vh;
+  width: 75%;
+  margin-left: 25%;
+}
+/*       Home      */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: 65px;
+  box-shadow: var(--neumorphism-shadow);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.content img {
+  border-radius: 50%;
+  box-shadow: 5px 5px 12px #98999a, -5px -5px 12px #ffffff;
+  padding: 1px;
+  position: absolute;
+  top: -30%;
+}
+.content-matter {
+  position: relative;
+  align-self: flex-end;
+  top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+.name {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 35px;
+}
+.fab {
+  box-shadow: 6px 6px 12px #acadae, -6px -6px 12px #ffffff;
+  /* box-shadow: var(--neumorphism-shadow); */
+  border-radius: 50%;
+  /* padding: 1px; */
+  cursor: pointer;
+}
+[class$="-square"] {
+  border-radius: 5px;
+}
