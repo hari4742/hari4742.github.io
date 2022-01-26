@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 :root {
   --background-color: #dddedf;
-  --neumorphism-shadow: 5px 5px 14px #aaabac, -5px -5px 14px #ffffff;
+  --neumorphism-shadow: 5px 5px 20px #bababb, -5px -5px 20px #ffffff;
+  --icon-box-shadow: 6px 6px 12px #f3f5f7, -6px -6px 12px #ffffff;
+}
+html {
+  scroll-behavior: smooth;
 }
 * {
   margin: 0px;
@@ -8,6 +13,11 @@
   box-sizing: border-box;
   font-family: monospace;
   color: #34495e;
+}
+[class^="devicon"] {
+  box-shadow: var(--icon-box-shadow);
+  border-radius: 50%;
+  font-size: 50px;
 }
 body {
   background-color: var(--background-color);
@@ -41,7 +51,7 @@ nav ul li a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 .fa-toggle-off {
   font-size: 25px;
@@ -54,7 +64,7 @@ nav ul li .fas {
 nav ul li:hover {
   transition: 0.4s;
   background: linear-gradient(145deg, #c7c8c9, #eceeef);
-  box-shadow: 21px 21px 35px #acadae, -21px -21px 35px #ffffff;
+  box-shadow: 20px 20px 35px #acadae, -20px -20px 35px #ffffff;
 }
 
 section {
@@ -163,4 +173,115 @@ section {
   box-shadow: 5px 5px 10px #797a7a, -5px -5px 10px #ffffff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*      Skills          */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-content {
+  position: relative;
+  height: 85%;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: var(--neumorphism-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.skill-content h2 {
+  /* position: absolute; */
+  /* top: 9%; */
+  align-self: flex-start;
+  font-size: 40px;
+  border-bottom: 4px solid #34495e;
+}
+.skill-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 80%;
+}
+/* Circular Progress Bar */
+.circular-progress {
+  position: relative;
+  transform: scale(0.8);
+  display: flex;
+  /* border: 2px solid; */
+  gap: 20px;
+}
+.circular-progress p {
+  /* align-self: center; */
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  box-shadow: var(--neumorphism-shadow);
+  width: 50%;
+  height: 70%;
+  border-radius: 30px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.outer {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  box-shadow: 11px 11px 22px #bcbdbe, -11px -11px 22px #feffff;
+}
+.inner {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  box-shadow: inset 11px 11px 22px #bcbdbe, inset -11px -11px 22px #feffff;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.circular-progress .fab {
+  font-size: 50px;
+  border-radius: 10px;
+}
+.circular-progress .fa-react {
+  border-radius: 50%;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 15px;
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  animation: fill 2s linear forwards;
+}
+@keyframes fill {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+/*  Education  */
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.education-content {
+  width: 90%;
+  height: 90%;
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px;
 }
