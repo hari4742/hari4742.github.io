@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
     <title>PortFolio</title>
     <link rel="stylesheet" href="assets/Styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/skills-section.css">
+    <link rel="stylesheet" href="assets/styles/education-section.css">
+    <link rel="stylesheet" href="assets/styles/projects-section.css">
+    <link rel="stylesheet" href="assets/styles/contact-section.css">
     <script src="assets/Js/index.js" defer></script>
     <!-- Font Awesome  -->
     <link
@@ -20,11 +24,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
     />
+    <!-- Swiper module -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav>
       <ul>
-        <i class="fas fa-toggle-off"></i>
+        <!-- <i class="fas fa-toggle-off"></i> -->
         <li>
           <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
         </li>
@@ -43,13 +52,13 @@
           <a href="#projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
         </li>
         <li>
-          <a href=""><i class="fas fa-scroll"></i><span>Blogs</span></a>
+          <a href="#blogs"><i class="fas fa-scroll"></i><span>Blogs</span></a>
         </li>
         <li>
-          <a href=""><i class="fas fa-certificate"></i><span>Certificates</span></a>
+          <a href="#cert"><i class="fas fa-certificate"></i><span>Certificates</span></a>
         </li>
         <li>
-          <a href=""><i class="fas fa-address-card"></i><span>Contact</span> Me</a>
+          <a href="#contact"><i class="fas fa-address-card"></i><span>Contact</span> Me</a>
         </li>
       </ul>
     </nav>
@@ -317,7 +326,179 @@
       </div>
     </section>
     <section class="projects" id="projects">
+      <div class="projects-content">
+        <h2>Projects</h2>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="project-card-container">
+                  <div class="project-card-image">
+                    <img src="https://picsum.photos/300/170" alt="random">
+                  </div>
+                  <div class="project-card-info">
+                    <div class="project-name">
+                      <p>Project Name1</p>
+                    </div>
+                    <div class="project-description">
+                      <p>Project Description</p>
+                      <div class="project-btns">
+                        <div class="project-source">
+                            <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
+                        </div>
+                        <div class="project-view">
+                          <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project-card-container">
+                  <div class="project-card-image">
+                    <img src="https://picsum.photos/300/170" alt="random">
+                  </div>
+                  <div class="project-card-info">
+                    <div class="project-name">
+                      <p>Project Name2</p>
+                    </div>
+                    <div class="project-description">
+                      <p>Project Description</p>
+                      <div class="project-btns">
+                        <div class="project-source">
+                            <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
+                        </div>
+                        <div class="project-view">
+                          <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="project-card-container">
+                <div class="project-card-image">
+                  <img src="https://picsum.photos/300/170" alt="random">
+                </div>
+                <div class="project-card-info">
+                  <div class="project-name">
+                    <p>Project Name3</p>
+                  </div>
+                  <div class="project-description">
+                    <p>Project Description Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="project-btns">
+                      <div class="project-source">
+                          <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
+                      </div>
+                      <div class="project-view">
+                        <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+    
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+    
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        
+
+      </div>
 
     </section>
+    <section class="blogs" id="blogs">
+      <div class="blogs-content">
+        <h2>Blogs</h2>
+      </div>
+    </section>
+    <section class="cert" id="cert">
+      <div class="cert-content">
+        <h2>Certifications</h2>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-content">
+        <div class="form-section">
+          <img src="./assets/images/contact-us.png" alt="">
+          <form action="" name="submit-to-google-sheet">
+            <h2>Contact Me</h2>
+            <input type="text" name="name" id="name" placeholder="Your Name">
+            <input type="mail" name="email" id="email" placeholder="Your Mail">
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <input type="submit" id="submit" value="Send">
+            <span id="sent_msg"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script for swiper Slider -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 2,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    // effect: "flip",
+    flipEffect: {
+      slideShadows: false,
+  },
+});
+
+    </script>
+    <!-- Script to send form data to google sheets -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIwXXLV7nwaX0sYTBacdwibXFNAwfiTR0y5pv2uA2wsjaTSpkI65CEm2ak2PLuc4pJcA/exec';
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        let sent_msg = document.querySelector('#sent_msg');
+        let submit_btn = document.querySelector('#submit');
+        sent_msg.innerHTML='<img src="./assets/images/loading.gif"/>';
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            sent_msg.innerHTML = "Message sent successfully!";
+            setTimeout(()=>{sent_msg.innerText=""},5000);
+            form.reset();
+            // console.log('Success!', response)
+          })
+          .catch(error => {
+            sent_msg.innerHTML = "Error Occured! Try Again...";
+            sent_msg.style.color="#ac0303";
+            setTimeout(()=>{sent_msg.innerText=""},5000);
+            form.reset();
+            // console.error('Error!', error.message)
+          })
+        
+      })
+    </script>
   </body>
 </html>

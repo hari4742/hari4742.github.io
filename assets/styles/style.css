@@ -3,6 +3,7 @@
   --background-color: #dddedf;
   --neumorphism-shadow: 5px 5px 20px #bababb, -5px -5px 20px #ffffff;
   --icon-box-shadow: 6px 6px 12px #f3f5f7, -6px -6px 12px #ffffff;
+  --section-padding:20px;
 }
 html {
   scroll-behavior: smooth;
@@ -27,7 +28,7 @@ ul {
   list-style: none;
 }
 nav {
-  width: 25%;
+  width: 18%;
   height: 100vh;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -69,8 +70,20 @@ nav ul li:hover {
 
 section {
   height: 100vh;
-  width: 75%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 20%;
+}
+[class$='content']{
+  position: relative;
+  width: 95%;
+  height: 90%;
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 /*       Home      */
 .home {
@@ -100,8 +113,7 @@ section {
 }
 .content-matter {
   position: relative;
-  align-self: flex-end;
-  top: -30px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -176,243 +188,24 @@ section {
 }
 
 /*      Skills          */
-.skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.skill-content {
-  position: relative;
-  height: 85%;
-  width: 85%;
-  border-radius: 10px;
-  box-shadow: var(--neumorphism-shadow);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-.skill-content h2 {
-  /* position: absolute; */
-  /* top: 9%; */
-  align-self: flex-start;
-  font-size: 40px;
-  border-bottom: 4px solid #34495e;
-}
-.skill-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-  height: 80%;
-}
-/* Circular Progress Bar */
-.circular-progress {
-  position: relative;
-  transform: scale(0.8);
-  display: flex;
-  /* border: 2px solid; */
-  gap: 20px;
-}
-.circular-progress p {
-  /* align-self: center; */
-  margin-top: 10px;
-  font-size: 30px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  box-shadow: var(--neumorphism-shadow);
-  width: 50%;
-  height: 70%;
-  border-radius: 30px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.outer {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  display: grid;
-  place-content: center;
-  box-shadow: 11px 11px 22px #bcbdbe, -11px -11px 22px #feffff;
-}
-.inner {
-  width: 70px;
-  height: 70px;
-  display: grid;
-  place-content: center;
-  border-radius: 50%;
-  box-shadow: inset 11px 11px 22px #bcbdbe, inset -11px -11px 22px #feffff;
-}
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.circular-progress .fab {
-  font-size: 50px;
-  border-radius: 10px;
-}
-.circular-progress .fa-react {
-  border-radius: 50%;
-}
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 15px;
-  stroke-dasharray: 260;
-  stroke-dashoffset: 260;
-  transform: rotate(-90deg);
-  transform-origin: center;
-  animation: fill 2s linear forwards;
-}
-@keyframes fill {
-  100% {
-    stroke-dashoffset: 40;
-  }
-}
+
 
 /*  Education  */
-.education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.education-content {
-  position: relative;
-  width: 90%;
-  height: 90%;
-  box-shadow: var(--neumorphism-shadow);
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.education-content::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 5px;
-  height: 100%;
-  background-color: whitesmoke;
-}
-.education-content h2 {
-  align-self: flex-start;
-  font-size: 40px;
-  border-bottom: 4px solid;
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-.edu-wrapper {
+
+/*  Projects  */
+/* Swiper Styling */
+.swiper{
   width: 100%;
   height: 100%;
+}
+.swiper .swiper-slide{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
-  position: relative;
-  top: -25px;
+  justify-content: center;
+  align-items: center;
 }
-[class^="row"] {
-  width: calc(50% - 50px);
-  background-color: whitesmoke;
-  padding: 8px 15px;
-  border-radius: 7px;
-  position: relative;
-  border: 4px solid white;
-  box-shadow: inset -1px 1px 5px 1px rgba(0, 0, 0, 0.08);
-}
-[class^="row"]::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 15px;
-  left: -15px;
-  background-color: whitesmoke;
-  transform: rotate(45deg);
-  border-left: 4px solid white;
-  border-bottom: 4px solid white;
-}
-[class^="row"] .fas {
-  position: absolute;
-  top: 0px;
-  left: -77px;
-  width: 50px;
-  height: 50px;
-  font-size: 22px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 50%;
-  display: grid;
-  place-content: center;
-  /* border: 3px solid; */
-  box-shadow: 0px 0px 0px 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
-    0 0px 0 4px rgba(0, 0, 0, 0.5);
-}
-.middle {
-  align-self: flex-start;
-  box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.08);
-  width: calc(50% - 50px);
-  background-color: whitesmoke;
-  padding: 8px 15px;
-  border-radius: 7px;
-  position: relative;
-  border: 4px solid white;
-  /* text-align: right; */
-}
-.middle::after {
-  right: -15px;
-  border: none;
-  border-top: 4px solid white;
-  border-right: 4px solid white;
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 15px;
-  background-color: whitesmoke;
-  transform: rotate(45deg);
-}
-.middle .fas {
-  right: -78px;
-  position: absolute;
-  top: 0px;
-  width: 50px;
-  height: 50px;
-  font-size: 22px;
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 50%;
-  display: grid;
-  place-content: center;
-  box-shadow: 0px 0px 0px 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
-    0 0px 0 4px rgba(0, 0, 0, 0.5);
-}
-.heading {
+/* Blogs */
+.blogs{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.heading span:nth-child(1) {
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
-}
-.heading span:nth-child(2) {
-  font-size: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.detail span:nth-child(1) {
-  font-size: 15px;
-  font-weight: 700;
-}
-.detail span:nth-child(2) {
-  font-size: 14px;
+  justify-content: center;
+  align-items: center;
 }
