@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+:root {
+  --background-color: #dddedf;
+  --neumorphism-shadow: 5px 5px 20px #bababb, -5px -5px 20px #ffffff;
+  --icon-box-shadow: 6px 6px 12px #f3f5f7, -6px -6px 12px #ffffff;
+  --section-padding:20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #34495e;
+}
+[class^="devicon"] {
+  box-shadow: var(--icon-box-shadow);
+  border-radius: 50%;
+  font-size: 50px;
+}
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+nav {
+  height: 100vh;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+nav ul li {
+  margin: 15px;
+  box-shadow: var(--neumorphism-shadow);
+  padding: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fa-toggle-off {
+  font-size: 25px;
+  color: rgb(36, 34, 34);
+  margin-bottom: 20px;
+}
+nav ul li .fas {
+  color: #3f72af;
+}
+nav ul li:hover {
+  transition: 0.4s;
+  background: linear-gradient(145deg, #c7c8c9, #eceeef);
+  box-shadow: 20px 20px 35px #acadae, -20px -20px 35px #ffffff;
+}
+
+section {
+  height: 100vh;
+  width: 80%;
+  margin-left: 20%;
+}
+[class$='content']{
+  position: relative;
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+/*       Home      */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: 65px;
+  box-shadow: var(--neumorphism-shadow);
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.content img {
+  border-radius: 50%;
+  box-shadow: 5px 5px 12px #98999a, -5px -5px 12px #ffffff;
+  padding: 1px;
+  position: absolute;
+  top: -30%;
+}
+.content-matter {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+.name {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 35px;
+}
+.fab {
+  box-shadow: 6px 6px 12px #acadae, -6px -6px 12px #ffffff;
+  /* box-shadow: var(--neumorphism-shadow); */
+  border-radius: 50%;
+  /* padding: 1px; */
+  cursor: pointer;
+}
+[class$="-square"] {
+  border-radius: 5px;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .content {
+  top: unset;
+  width: 70%;
+  height: 80%;
+}
+.about .content img {
+  position: absolute;
+  top: unset;
+  left: -18%;
+  transform: scale(1.06);
+}
+.about-text {
+  width: 72%;
+  margin-left: 20%;
+  text-align: justify;
+}
+.about-text h2 {
+  position: absolute;
+  top: 9%;
+  font-size: 40px;
+  border-bottom: 4px solid #34495e;
+}
+.download_cv {
+  font-size: 20px;
+  position: absolute;
+  bottom: 7%;
+  right: 10%;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #34495e;
+  color: #dddedf;
+  box-shadow: 5px 5px 10px #797a7a, -5px -5px 10px #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+/* Swiper Styling */
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Blogs */
+.blogs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:600px) {
+  nav{
+    width: 100%;
+    height: fit-content;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+
+  }
+  nav ul li{
+    height: fit-content;
+  }
+}

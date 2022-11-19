@@ -3,502 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
-    <title>PortFolio</title>
-    <link rel="stylesheet" href="assets/Styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/skills-section.css">
-    <link rel="stylesheet" href="assets/styles/education-section.css">
-    <link rel="stylesheet" href="assets/styles/projects-section.css">
-    <link rel="stylesheet" href="assets/styles/contact-section.css">
-    <script src="assets/Js/index.js" defer></script>
-    <!-- Font Awesome  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hari Kiran Kante</title>
+    <script src="./assets/Js/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <!-- Unicons link -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Devicon for programming laguagues icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
-    <!-- Swiper module -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
   </head>
   <body>
-    <nav>
-      <ul>
-        <!-- <i class="fas fa-toggle-off"></i> -->
-        <li>
-          <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
-        </li>
-        <li>
-          <a href="#about"
-            ><i class="fas fa-user-alt"></i><span>About Me</span></a
-          >
-        </li>
-        <li>
-          <a href="#skills"><i class="fas fa-tasks"></i><span>Skills</span></a>
-        </li>
-        <li>
-          <a href="#education"><i class="fas fa-book-open"></i><span>Education</span></a>
-        </li>
-        <li>
-          <a href="#projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a>
-        </li>
-        <li>
-          <a href="#blogs"><i class="fas fa-scroll"></i><span>Blogs</span></a>
-        </li>
-        <li>
-          <a href="#cert"><i class="fas fa-certificate"></i><span>Certificates</span></a>
-        </li>
-        <li>
-          <a href="#contact"><i class="fas fa-address-card"></i><span>Contact</span> Me</a>
-        </li>
-      </ul>
-    </nav>
-    <section id="home" class="home">
-      <div class="content">
-        <img src="https://picsum.photos/230" alt="" />
-        <div class="content-matter">
-          <div class="content-text">
-            <p class="name">Hari Kiran Kante</p>
-            <p>I'm a Computer Science Student</p>
-          </div>
-          <p class="social-media-icons">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-instagram-square"></i>
-          </p>
+    <!--  Header Starts  -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo">Hari</a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">
+                <i class="uil uil-estate nav_icon"></i> Home
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="uil uil-user nav_icon"></i>About
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="uil uil-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">
+                <i class="uil uil-briefcase-alt nav_icon"></i> Services
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Portfolio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="uil uil-message nav_icon"></i> Contact Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav_close" id="nav-close"></i>
         </div>
-      </div>
-    </section>
-    <section id="about" class="about">
-      <div class="content">
-        <img src="https://picsum.photos/230" alt="" />
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
-            nostrum reprehenderit mollitia, tempore minus iste est cupiditate
-            magni quibusdam esse velit voluptates vero nemo dolores recusandae
-            atque quia alias quae? Ad, reprehenderit repellendus officia cumque
-            numquam consectetur a explicabo consequatur perferendis nemo,
-            dolores, neque sapiente odio soluta corporis sed repellat officiis
-            temporibus aliquid error suscipit sint sequi magnam! Neque, saepe.
-          </p>
-          <p class="download_cv">Download CV</p>
-        </div>
-      </div>
-    </section>
-    <section class="skills" id="skills">
-      <div class="skill-content">
-        <h2>Skills</h2>
-        <div class="skill-items">
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="devicon-cplusplus-plain"></i>
-                </div>
-              </div>
-            </div>
-            <p>C++</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="fab fa-python"></i>
-                </div>
-              </div>
-            </div>
-            <p>Python</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="fab fa-react"></i>
-                </div>
-              </div>
-            </div>
-            <p>React</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="devicon-c-plain"></i>
-                </div>
-              </div>
-            </div>
-            <p>C</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="fab fa-git-alt"></i>
-                </div>
-              </div>
-            </div>
-            <p>Git</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
-          </div>
-          <div class="circular-progress">
-            <div class="outer">
-              <div class="inner">
-                <div class="icon">
-                  <i class="fab fa-js-square"></i>
-                </div>
-              </div>
-            </div>
-            <p>Java Script</p>
-            <svg width="160px" height="160px">
-              <defs>
-                <linearGradient id="GradientColor">
-                  <stop offset="0%" stop-color="#e91e63" />
-                  <stop offset="100%" stop-color="#673ab7" />
-                </linearGradient>
-              </defs>
-              <circle
-                class="circle"
-                cx="110"
-                cy="50"
-                r="42"
-                stroke-linecap="round"
-              />
-            </svg>
+        <div class="nav_btns">
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="education" class="education">
-      <div class="education-content">
-        <h2>Education</h2>
-        <div class="edu-wrapper">
-          <div class="row-1 card">
-            <i class="fas fa-user-graduate"></i>
-            <div class="heading">
-              <span>B.Tech Computer Science</span>
-              <span>Nov 2020 - May 2024</span>
+      </nav>
+    </header>
+    <!--  Header Ends  -->
+
+    <!-- Main Starts -->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_content grid">
+            <div class="home_social">
+              <a href="#" class="home_social-icon">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="#" class="home_social-icon"
+                ><i class="uil uil-github-alt"></i>
+              </a>
+              <a href="#" class="home_social-icon">
+                <i class="uil uil-instagram"></i
+              ></a>
             </div>
-            <p>
-              <div class="detail">
-                <span>College: </span>
-                <span>Central University of Haryana, Mahendragarh</span>
-              </div>
-              <div class="detail">
-                <span>Majors:</span>
-                <span>Data Structures and Algorithms, RDBMS, Digital
-                Electronics</span>
-              </div>
-              <div class="detail">
-                <span>CGPA: </span>
-                <span>9.3</span>
-              </div>
+            <div class="home_img">
+              <img
+                src="./assets/images/propic_violet_bg.png"
+                alt="Hari Kiran"
+              />
+            </div>
+          </div>
+          <div class="home_data">
+            <h1 class="home_title">Hi, I'am Hari Kiran</h1>
+            <h3 class="home_subtitle">Computer Science Student</h3>
+            <p class="home_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, voluptatibus?
             </p>
+            <a href="#contact" class="button button--flex">
+              Contact Me <i class="uil uil-message button_icon"></i>
+            </a>
           </div>
-          <div class="middle card">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <div class="heading">
-              <span>Secondary Higher Education(10+2)</span>
-              <span>June 2018 - Mar 2020</span>
-            </div>
-            <p>
-              <div class="detail">
-                <span>College: </span>
-                <span>AP Residential College, N.Sagar</span>
-              </div>
-              <div class="detail">
-                <span>Majors:</span>
-                <span>Mathematics, Physics, Chemistry</span>
-              </div>
-              <div class="detail">
-                <span>CGPA: </span>
-                <span>9.8</span>
-              </div>
-            </p>
-          </div>
-          <div class="row-3 card">
-            <i class="fas fa-book-reader"></i>
-            <div class="heading">
-              <span>Secondary Education</span>
-              <span>2008 - 2018</span>
-            </div>
-            <p>
-              <div class="detail">
-                <span>School: </span>
-                <span>S.V.L Memorial High School, Madanapalle</span>
-              </div>
-              <div class="detail">
-                <span>Majors:</span>
-                <span>Mathematics, Science, Social, Hindi, Telugu</span>
-              </div>
-              <div class="detail">
-                <span>CGPA: </span>
-                <span>9.8</span>
-              </div>
-            </p>
+          <div class="home_scroll">
+            <a href="#about" class="home_scroll-button button--flex">
+              <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+              <span class="home_scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home_scroll-arrow"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-      <div class="projects-content">
-        <h2>Projects</h2>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="project-card-container">
-                  <div class="project-card-image">
-                    <img src="https://picsum.photos/300/170" alt="random">
-                  </div>
-                  <div class="project-card-info">
-                    <div class="project-name">
-                      <p>Project Name1</p>
-                    </div>
-                    <div class="project-description">
-                      <p>Project Description</p>
-                      <div class="project-btns">
-                        <div class="project-source">
-                            <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
-                        </div>
-                        <div class="project-view">
-                          <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      </section>
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+        <span class="section_subtitle">My Introduction</span>
+        <div class="about_container container grid">
+          <img
+            src="./assets/images/hari_cool_propic.jpeg"
+            alt="hari kiran"
+            class="about_img"
+          />
+          <div class="about_data">
+            <p class="about_description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem itaque dicta eaque inventore ullam vero!
+            </p>
+            <div class="about_info">
+              <div>
+                <span class="about_info-title"> 03+ </span>
+                <span class="about_info-name"
+                  >Years <br />
+                  experience
+                </span>
+              </div>
+              <div>
+                <span class="about_info-title"> 20+ </span>
+                <span class="about_info-name"
+                  >Completed <br />
+                  Projects
+                </span>
+              </div>
+              <div>
+                <span class="about_info-title"> 05+ </span>
+                <span class="about_info-name"
+                  >Companies<br />
+                  Worked
+                </span>
+              </div>
             </div>
+            <div class="about_buttons">
+              <!-- attach resume here -->
+              <a href="#" class="button button--flex">
+                Download Resume <i class="uil uil-download-alt button_icon"></i>
+              </a>
             </div>
-            <div class="swiper-slide">
-                <div class="project-card-container">
-                  <div class="project-card-image">
-                    <img src="https://picsum.photos/300/170" alt="random">
-                  </div>
-                  <div class="project-card-info">
-                    <div class="project-name">
-                      <p>Project Name2</p>
-                    </div>
-                    <div class="project-description">
-                      <p>Project Description</p>
-                      <div class="project-btns">
-                        <div class="project-source">
-                            <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
-                        </div>
-                        <div class="project-view">
-                          <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-card-container">
-                <div class="project-card-image">
-                  <img src="https://picsum.photos/300/170" alt="random">
+          </div>
+        </div>
+      </section>
+      <section class="skills section" id="skills">
+        <h2 class="section_title">Skills</h2>
+        <span class="section_subtitle">My Technical Level</span>
+        <div class="skills_container container grid">
+          <div>
+            <!-- Skill 1 -->
+            <div class="skills_content skills_open">
+              <div class="skills_header">
+                <i class="uil uil-brackets-curly skills_icon"></i>
+                <div>
+                  <h1 class="skills_title">Frontend Developer</h1>
+                  <span class="skills_subtitle">More than 4 years</span>
                 </div>
-                <div class="project-card-info">
-                  <div class="project-name">
-                    <p>Project Name3</p>
-                  </div>
-                  <div class="project-description">
-                    <p>Project Description Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <div class="project-btns">
-                      <div class="project-source">
-                          <a href="#"><i class="fa-brands fa-github"></i>Source Code</a>
-                      </div>
-                      <div class="project-view">
-                        <a href="#"><i class="fa-solid fa-globe"></i>View Page</a>
-                      </div>
-                    </div>
-                  </div>
+                <i class="uil uil-angle-down skills_arrow"></i>
               </div>
+              <div class="skills_list grid">
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">HTML</h3>
+                    <span class="skills_number">95%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_html"></span>
+                  </div>
+                </div>
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">CSS</h3>
+                    <span class="skills_number">80%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_css"></span>
+                  </div>
+                </div>
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">JS</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_js"></span>
+                  </div>
+                </div>
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">React</h3>
+                    <span class="skills_number">65%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-server-network skills_icon"></i>
+                <div>
+                  <h1 class="skills_title">Backend Developer</h1>
+                  <span class="skills_subtitle">More than 3 years</span>
+                </div>
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+              <div class="skills_list grid">
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Node Js</h3>
+                    <span class="skills_number">70%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_node"></span>
+                  </div>
+                </div>
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Firebase</h3>
+                    <span class="skills_number">90%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_firebase"></span>
+                  </div>
+                </div>
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Python</h3>
+                    <span class="skills_number">55%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_python"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div>
+            <!-- Skill 3 -->
+            <div class="skills_content skills_close">
+              <div class="skills_header">
+                <i class="uil uil-swatchbook skills_icon"></i>
+                <div>
+                  <h1 class="skills_title">Designer</h1>
+                  <span class="skills_subtitle">More than 1 years</span>
+                </div>
+                <i class="uil uil-angle-down skills_arrow"></i>
+              </div>
+              <div class="skills_list grid">
+                <div class="skill_data">
+                  <div class="skills_titles">
+                    <h3 class="skills_name">Figma</h3>
+                    <span class="skills_number">50%</span>
+                  </div>
+                  <div class="skills_bar">
+                    <span class="skills_percentage skills_figma"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-    
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-    
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        
-
-      </div>
-
-    </section>
-    <section class="blogs" id="blogs">
-      <div class="blogs-content">
-        <h2>Blogs</h2>
-      </div>
-    </section>
-    <section class="cert" id="cert">
-      <div class="cert-content">
-        <h2>Certifications</h2>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="contact-content">
-        <div class="form-section">
-          <img src="./assets/images/contact-us.png" alt="">
-          <form action="" name="submit-to-google-sheet">
-            <h2>Contact Me</h2>
-            <input type="text" name="name" id="name" placeholder="Your Name">
-            <input type="mail" name="email" id="email" placeholder="Your Mail">
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
-            <input type="submit" id="submit" value="Send">
-            <span id="sent_msg"></span>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Script for swiper Slider -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: 2,
-    // If we need pagination
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    // effect: "flip",
-    flipEffect: {
-      slideShadows: false,
-  },
-});
-
-    </script>
-    <!-- Script to send form data to google sheets -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzIwXXLV7nwaX0sYTBacdwibXFNAwfiTR0y5pv2uA2wsjaTSpkI65CEm2ak2PLuc4pJcA/exec';
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        let sent_msg = document.querySelector('#sent_msg');
-        let submit_btn = document.querySelector('#submit');
-        sent_msg.innerHTML='<img src="./assets/images/loading.gif"/>';
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            sent_msg.innerHTML = "Message sent successfully!";
-            setTimeout(()=>{sent_msg.innerText=""},5000);
-            form.reset();
-            // console.log('Success!', response)
-          })
-          .catch(error => {
-            sent_msg.innerHTML = "Error Occured! Try Again...";
-            sent_msg.style.color="#ac0303";
-            setTimeout(()=>{sent_msg.innerText=""},5000);
-            form.reset();
-            // console.error('Error!', error.message)
-          })
-        
-      })
-    </script>
+      </section>
+    </main>
+    <!-- Main Ends -->
   </body>
 </html>
