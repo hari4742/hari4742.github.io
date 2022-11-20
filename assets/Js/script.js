@@ -41,3 +41,21 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
+
+// Qualification
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("qualification_active");
+    });
+    target.classList.add("qualification_active");
+    tab.forEach((tab) => {
+      tab.classList.add("qualification_active");
+    });
+    tab.classList.add("qualification_active");
+  });
+});
