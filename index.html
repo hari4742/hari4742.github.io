@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/styles/swiper-bundle.min.css" />
   </head>
   <body>
     <!--  Header Starts  -->
@@ -463,8 +465,91 @@
           </div>
         </div>
       </section>
-      <section class="portfolio section" id="portfolio"></section>
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">My Projects</h2>
+        <span class="section_subtitle">Most Recent Works</span>
+        <div class="portfolio_container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Project 1 -->
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="https://picsum.photos/300"
+                class="portfolio_img"
+                alt="random picture"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Project Title 1</h3>
+                <p class="portfolio_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, ab.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="https://picsum.photos/300"
+                class="portfolio_img"
+                alt="random picture"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Project Title 2</h3>
+                <p class="portfolio_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, ab.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="portfolio_content grid swiper-slide">
+              <img
+                src="https://picsum.photos/300"
+                class="portfolio_img"
+                alt="random picture"
+              />
+              <div class="portfolio_data">
+                <h3 class="portfolio_title">Project Title 3</h3>
+                <p class="portfolio_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vitae, ab.
+                </p>
+                <a
+                  href="#"
+                  class="button button--flex button--small portfolio_button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--  swiper arrow -->
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- Swiper Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
     <!-- Main Ends -->
+    <script src="./assets/Js/swiper-bundle.min.js"></script>
   </body>
 </html>
