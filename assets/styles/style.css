@@ -373,8 +373,10 @@ color:var(--first-color);
 }
 
 .about_description{
+    font-size: var(--small-font-size);
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: var(--mb-1-5);
+    text-align: justify ;
 }
 
 .about_info{
@@ -458,30 +460,68 @@ color:var(--first-color);
     display: block;
     background-color: var(--first-color);
 }
-.skills_html{
-    width:90%;
+.skills_python{
+    width: 85%;
 }
-.skills_css{
-    width: 80%;
-}
-.skills_js{
+.skills_cplusplus{
     width: 75%;
 }
-.skills_react{
-    width: 60%;
-}
-.skills_node{
-    width: 70%;
-}
-.skills_firebase{
+.skills_js{
     width: 90%;
 }
-.skills_python{
-    width: 55%;
+.skills_sql{
+    width: 70%;
+}
+.skills_html{
+    width:95%;
+}
+.skills_css{
+    width: 90%;
+}
+.skills_react{
+    width: 70%;
+}
+.skills_node{
+    width: 80%;
+}
+.skills_firebase{
+    width: 70%;
+}
+.skills_django{
+    width: 50%;
+}
+.skills_pandas{
+    width: 85%;
+}
+.skills_matplotlib{
+    width: 75%;
+}
+.skills_ml{
+    width: 70%;
+}
+.skills_powerbi{
+    width: 60%;
 }
 
+
 .skills_figma{
-    width: 50%;
+    width: 70%;
+}
+.skills_canva{
+    width: 80%;
+}
+
+.skills_git{
+    width: 90%;
+}
+.skills_dsa{
+    width: 70%;
+}
+.skills_linux{
+    width: 70%;
+}
+.skills_vscode{
+    width: 90%;
 }
 
 .skills_close .skills_list{
@@ -947,7 +987,7 @@ color:var(--first-color);
     }
     .home_content{
         padding-top: .5rem;
-        column-gap:2rem;
+        column-gap:1rem;
     }
     .home_img{
         width: 360px;
@@ -965,7 +1005,7 @@ color:var(--first-color);
         width: 350px;
     }
     .about_description{
-        text-align: initial;
+        text-align: justify;
     }
     .about_info{
         justify-content: space-between;
