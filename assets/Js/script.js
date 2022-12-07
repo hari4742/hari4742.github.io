@@ -240,7 +240,7 @@ anime
     easing: "linear",
     duration: 600,
     offset: "-=700",
-    delay: (el, i) => 34 * (i + 1),
+    delay: (el, i) => 33 * (i + 1),
   })
   .add({
     targets: ".ml11",
@@ -249,3 +249,61 @@ anime
     easing: "easeOutExpo",
     delay: 2000,
   });
+
+// Submit to google forms
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyXAohg2Z0YKlTt0IWgZGLTJYw3NwP99C_82Jt7ZrvJEyrseBn2fgN_5eN9viakKzg1CA/exec";
+const form = document.forms["submit-to-google-sheet"];
+const formSubmit = document.querySelector(".form-submit");
+
+formSubmit.addEventListener("click", () => {
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const subject = document.querySelector("#subject").value;
+  const message = document.querySelector("#message").value;
+  let sent_msg = document.querySelector("#sent_msg");
+  formSubmit.innerHTML = 'Send Message <i class="custom-loader"></i>';
+  if ((name === "") | (email === "") | (subject === "") | (message === "")) {
+    sent_msg.classList.add("insert-text");
+    sent_msg.innerText = "Input fields can't be empty...";
+    sent_msg.style.color = "#d35400";
+    setTimeout(() => {
+      sent_msg.innerText = "";
+      sent_msg.classList.remove("insert-text");
+      formSubmit.innerHTML =
+        'Send Message <i class="uil uil-message button_icon"></i>';
+    }, 3000);
+  } else {
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        sent_msg.classList.add("insert-text");
+        sent_msg.style.color = "green";
+        sent_msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => {
+          formSubmit.innerHTML =
+            'Send Message <i class="uil uil-message button_icon"></i>';
+        }, 1000);
+        setTimeout(() => {
+          sent_msg.innerText = "";
+          sent_msg.classList.remove("insert-text");
+        }, 5000);
+        form.reset();
+        console.log("Success!", response);
+      })
+      .catch((error) => {
+        sent_msg.classList.add("insert-text");
+        sent_msg.innerText = "Error Occured! Try Again...";
+        sent_msg.style.color = "#d35400";
+        setTimeout(() => {
+          sent_msg.innerText = "";
+          sent_msg.classList.remove("insert-text");
+          formSubmit.innerHTML =
+            'Send Message <i class="uil uil-message button_icon"></i>';
+        }, 3000);
+        form.reset();
+        console.error("Error!", error.message);
+      });
+  }
+});
+// Yeah! I know, the code for form validation is a shit.

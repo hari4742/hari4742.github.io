@@ -1321,3 +1321,37 @@ color:var(--first-color);
       opacity: 0; 
     }
   }
+#sent_msg{
+    height: 25px;
+    margin-top: var(--mb-0-5);
+}
+  .insert-text{
+    display: block;
+    animation-name: move-text;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes move-text {
+    0%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+  }
+
+  /* Send Loading animation */
+  .custom-loader {
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:8px solid;
+    border-color:#fff #0000;
+    animation:s1 1s infinite;
+    margin-left: var(--mb-0-75);
+  }
+  @keyframes s1 {to{transform: rotate(.5turn)}}
