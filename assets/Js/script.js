@@ -1,3 +1,8 @@
+window.addEventListener("load", (event) => {
+  const loading = document.querySelector(".loading");
+  loading.style.display = "none";
+  document.querySelector("body").style.overflow = "visible";
+});
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -85,19 +90,17 @@ modalCloses.forEach((modalClose) => {
 
 // Portfolio Swiper
 
-// let swiper = new Swiper(".portfolio_container", {
-//   cssMode: true,
-//   loop: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
+let swiper = new Swiper(".swiper-container", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // Scroll sections active link
 
@@ -179,3 +182,70 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// text animations
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".ml9 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".ml9 .letter",
+    scale: [0, 1],
+    duration: 2000,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i + 1),
+  })
+  .add({
+    targets: ".ml9",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000,
+  });
+
+var textWrapperSubHeading = document.querySelector(".ml11 .letters");
+textWrapperSubHeading.innerHTML = textWrapperSubHeading.textContent.replace(
+  /([^\x00-\x80]|\w)/g,
+  "<span class='letter'>$&</span>"
+);
+
+anime
+  .timeline({ loop: true })
+  .add({
+    targets: ".ml11 .line",
+    scaleY: [0, 1],
+    opacity: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+  })
+  .add({
+    targets: ".ml11 .line",
+    translateX: [
+      0,
+      document.querySelector(".ml11 .letters").getBoundingClientRect().width +
+        10,
+    ],
+    easing: "linear",
+    duration: 600,
+    delay: 500,
+  })
+  .add({
+    targets: ".ml11 .letter",
+    opacity: [0, 1],
+    easing: "linear",
+    duration: 600,
+    offset: "-=700",
+    delay: (el, i) => 34 * (i + 1),
+  })
+  .add({
+    targets: ".ml11",
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 2000,
+  });

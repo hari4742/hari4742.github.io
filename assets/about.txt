@@ -1,0 +1,7 @@
+Hi, I'm Hari Kiran Kante, currently studying Computer Science and Technology at the Central University of Haryana, India. I love to design things, build them and break them just to see how strong I made them.
+
+My curiosity about technology started when I saw my uncle working on a laptop and showed me all the amazing things that we can do with it.
+
+On my journey into the fascinating world of technology, I have learned a few programming languages such as Python, and C++, as well as React Js, a powerful front-end library, and everyone's favorite Node Js. Finally, it wasn't too late before I realized that DATA can answer your questions if you know how to ask them.
+
+I'm an aspiring software developer, data scientist, and full-stack developer, who works with my hands to make magic happen on the internet.
