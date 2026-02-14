@@ -245,6 +245,7 @@
   "projects": [
     {
       "title": "HaSh - Hari's Shell",
+      "date": "Jan 2025 - Mar 2025",
       "description": "🐚 HaSh (Hari's Shell) is a custom POSIX-compliant shell built from scratch in Java as a learning project. The goal of this project is to explore system programming concepts, shell internals, and command parsing while gradually adding new features",
       "image": "./assets/images/projects/hash/hash_banner.jpg",
       "gallery": [
@@ -264,6 +265,7 @@
     },
     {
       "title": "Pylox",
+      "date": "Nov 2024 - Feb 2025",
       "description": "🦊 A Python-based frontend for a Lox interpreter, handling lexical analysis, parsing, and abstract syntax tree generation.",
       "image": "./assets/images/projects/pylox/pylox_function.jpg",
       "gallery": [
@@ -283,6 +285,7 @@
     },
     {
       "title": "Google Meet Assistance",
+      "date": "Mar 2023 - Mar 2024",
       "description": "During my internship at Zedblock, I worked on an AI project where users could talk to LLM agents in real time, modify prompts, and create multiple agents for personalized interactions. Check the demo! You will be suprized!😉.",
       "image": "./assets/images/projects/gmeet_agent/gmeet_demo.png",
       "gallery": [
@@ -299,6 +302,7 @@
     },
     {
       "title": "Digital Library",
+      "date": "Aug 2021 - Dec 2021",
       "description": "A Full stack project using React JS and Node JS. In this website, Users can signup, read books online, search and filter for books, add reviews and rating, and add books to their personal collection.",
       "image": "./assets/images/projects/digital_library/home.jpg",
       "gallery": [
@@ -329,6 +333,7 @@
     },
     {
       "title": "Statistic Calculator",
+      "date": "Sep 2021",
       "description": "Website Where we can do statistical calculations. Made using HTML, CSS & Vannila JS. Implemented few advanced calculations like kurtosis, skewness, moments etc..",
       "image": "./assets/images/projects/statistic_calculator/home.jpg",
       "gallery": [
@@ -354,6 +359,7 @@
     },
     {
       "title": "Re-selling Platform",
+      "date": "Feb 2022 - Mar 2022",
       "description": "Made Using React and Node.This website makes it easy to connect students within the cuh campus to buy , sell or exchange used goods. It can be used from on laptop and mobile phones.",
       "image": "./assets/images/projects/u_cell/home.jpg",
       "gallery": [
@@ -376,6 +382,7 @@
     },
     {
       "title": "Web Scraping Using Python",
+      "date": "Dec 2022",
       "description": "A Project to scrap data about Science fiction movies from the popular IMDB website using Beautiful Soup Library in Python.",
       "image": "./assets/images/projects/web_scraping/img1.jpg",
       "gallery": [
@@ -395,6 +402,7 @@
     },
     {
       "title": "Credit Card Fraud Detection Using ML",
+      "date": "Dec 2022",
       "description": "A Data Science project to detect whether a transaction is fraudulent or not, using ML models in Python. In this project, data is preprocessed, analyzed, 5 ML models are built and compared.",
       "image": "./assets/images/projects/credit_card_fraud_detection/home.jpg",
       "gallery": [

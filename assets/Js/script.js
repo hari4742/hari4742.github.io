@@ -510,7 +510,13 @@ function renderProjects() {
         </div>
       </div>
       <div class="portfolio_data">
-        <h3 class="portfolio_title">${project.title}</h3>
+        <div class="portfolio_header">
+          <h3 class="portfolio_title">${project.title}</h3>
+          <span class="portfolio_date">
+            <i class="uil uil-calender-alt"></i>
+            ${project.date}
+          </span>
+        </div>
         <p class="portfolio_description">${project.description}</p>
         <div class="portfolio_btns">
           ${project.buttons

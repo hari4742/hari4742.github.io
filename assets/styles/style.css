@@ -798,6 +798,27 @@ body.dark-theme .skill_card:hover {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
 }
+
+.portfolio_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfolio_date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    font-weight: var(--font-medium);
+}
+
 .portfolio_description{
     margin-bottom: var(--mb-0-75);
 }
