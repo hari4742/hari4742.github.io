@@ -162,6 +162,21 @@
           "percentage": 90
         }
       ]
+    },
+    {
+      "title": "DevOps",
+      "subtitle": "More than 1 year",
+      "icon": "uil-server-network",
+      "skills": [
+        {
+          "name": "Docker",
+          "percentage": 75
+        },
+        {
+          "name": "Kubernetes",
+          "percentage": 65
+        }
+      ]
     }
   ],
   "qualifications": {

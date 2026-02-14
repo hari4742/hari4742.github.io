@@ -44,25 +44,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-// Skills
-
-const skillsContent = document.getElementsByClassName("skills_content");
-const skillsHeader = document.querySelectorAll(".skills_header");
-
-function toggleSkills() {
-  let itemClass = this.parentNode.className;
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills_content skills_close";
-  }
-  if (itemClass === "skills_content skills_close") {
-    this.parentNode.className = "skills_content skills_open";
-  }
-}
-
-skillsHeader.forEach((el) => {
-  el.addEventListener("click", toggleSkills);
-});
-
 // Qualification
 const tabs = document.querySelectorAll("[data-target]");
 const tabContents = document.querySelectorAll("[data-content]");
@@ -322,66 +303,42 @@ function renderSkills() {
   const skillsData = portfolioData.skills;
   const skillsContainer = document.querySelector(".skills_container");
 
-  let leftColumn = "";
-  let rightColumn = "";
-
-  skillsData.forEach((skillGroup, index) => {
-    const skillsHTML = `
-      <div class="skills_content skills_close">
-        <div class="skills_header">
-          <i class="uil ${skillGroup.icon} skills_icon"></i>
-          <div>
-            <h1 class="skills_title">${skillGroup.title}</h1>
-            <span class="skills_subtitle">${skillGroup.subtitle}</span>
-          </div>
-          <i class="uil uil-angle-down skills_arrow"></i>
-        </div>
-        <div class="skills_list grid">
-          ${skillGroup.skills
-            .map(
-              (skill) => `
-            <div class="skill_data">
-              <div class="skills_titles">
-                <h3 class="skills_name">${skill.name}</h3>
-                <span class="skills_number">${skill.percentage}%</span>
-              </div>
-              <div class="skills_bar">
-                <span class="skills_percentage" style="width: ${skill.percentage}%"></span>
-              </div>
+  skillsContainer.innerHTML = `
+    <div class="skills_grid">
+      ${skillsData
+        .map(
+          (skillGroup) => `
+        <div class="skill_card">
+          <div class="skill_card_header">
+            <i class="uil ${skillGroup.icon} skill_card_icon"></i>
+            <div class="skill_card_title_wrapper">
+              <h3 class="skill_card_title">${skillGroup.title}</h3>
+              <span class="skill_card_subtitle">${skillGroup.subtitle}</span>
             </div>
-          `
-            )
-            .join("")}
+          </div>
+          <div class="skill_card_content">
+            ${skillGroup.skills
+              .map(
+                (skill) => `
+              <div class="skill_item">
+                <div class="skill_item_header">
+                  <span class="skill_item_name">${skill.name}</span>
+                  <span class="skill_item_percentage">${skill.percentage}%</span>
+                </div>
+                <div class="skill_item_bar">
+                  <div class="skill_item_progress" style="width: ${skill.percentage}%"></div>
+                </div>
+              </div>
+            `
+              )
+              .join("")}
+          </div>
         </div>
-      </div>
-    `;
-
-    if (index < 4) {
-      leftColumn += skillsHTML;
-    } else {
-      rightColumn += skillsHTML;
-    }
-  });
-
-  skillsContainer.innerHTML = `<div>${leftColumn}</div><div>${rightColumn}</div>`;
-
-  // Re-attach event listeners for skill toggles
-  const skillsContent = document.getElementsByClassName("skills_content");
-  const skillsHeader = document.querySelectorAll(".skills_header");
-
-  skillsHeader.forEach((el) => {
-    el.addEventListener("click", toggleSkills);
-  });
-
-  function toggleSkills() {
-    let itemClass = this.parentNode.className;
-    for (let i = 0; i < skillsContent.length; i++) {
-      skillsContent[i].className = "skills_content skills_close";
-    }
-    if (itemClass === "skills_content skills_close") {
-      this.parentNode.className = "skills_content skills_open";
-    }
-  }
+      `
+        )
+        .join("")}
+    </div>
+  `;
 }
 
 function renderQualifications() {
