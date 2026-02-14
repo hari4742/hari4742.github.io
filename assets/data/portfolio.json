@@ -244,6 +244,42 @@
   ],
   "projects": [
     {
+      "title": "Automatic Music Transcription (AMT)",
+      "date": "Jan 2025 - Aug 2025",
+      "category": "Deep Learning",
+      "difficulty": "Advanced",
+      "technologies": ["Python", "PyTorch", "Librosa", "FastAPI", "React", "PostgreSQL", "Celery", "WandB"],
+      "keyFeatures": [ "Audio-to-MIDI conversion", "Custom dataset preprocessing", "Async audio processing", "RESTful API with FastAPI", "React-based UI", "Piano roll visualization"],
+      "description": "🎵 A comprehensive automatic music transcription system that converts raw audio (WAV/MP3) to MIDI format using deep learning. Built with a custom CNN-Bidirectional LSTM neural network trained on preprocessed spectrograms and piano rolls. Features both backend processing pipeline and modern React frontend with real-time status updates.",
+      "image": "./assets/images/projects/amt/1.home_page.png",
+      "gallery": [
+        "./assets/images/projects/amt/1.home_page.png",
+        "./assets/images/projects/amt/2.transcribe_page.png",
+        "./assets/images/projects/amt/3.comparision_page.png",
+        "./assets/images/projects/amt/4.piano_roll.png"
+      ],
+      "buttons": [
+        {
+          "text": "Backend Repo",
+          "url": "https://github.com/hari4742/amt-backend",
+          "icon": "uil-github",
+          "target": "_blank"
+        },
+        {
+          "text": "Frontend Repo",
+          "url": "https://github.com/hari4742/AMT_UI",
+          "icon": "uil-github",
+          "target": "_blank"
+        },
+        {
+          "text": "ML Repo",
+          "url": "https://github.com/hari4742/Automatic-Music-Transcription",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
       "title": "HaSh - Hari's Shell",
       "date": "Jan 2025 - Mar 2025",
       "category": "Systems Programming",
