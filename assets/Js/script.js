@@ -469,55 +469,55 @@ function renderProjects() {
   const projectsData = portfolioData.projects;
   const portfolioWrapper = document.querySelector(".portfolio-wrapper");
 
-  portfolioWrapper.innerHTML = projectsData
+  const projectsHTML = projectsData
     .map(
       (project) => `
-    <div class="portfolio_content grid">
-      <div class="portfolio_img-container">
-        <div class="portfolio_view-more services_button">
-          Click to View <br />
-          More
-        </div>
-        <img
-          src="${project.image}"
-          class="portfolio_img"
-          alt="${project.title}"
-        />
-      </div>
-      <div class="services_modal">
-        <div class="services_modal-content">
-          <i class="uil uil-times services_modal-close"></i>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              ${project.gallery
-                .map(
-                  (img) => `
-                <div class="swiper-slide">
-                  <img src="${img}" alt="" />
-                </div>
-              `
-                )
-                .join("")}
-            </div>
-            <div class="swiper-button-next">
-              <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-              <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-pagination"></div>
+    <div class="portfolio_content">
+      <div class="portfolio_left">
+        <div class="portfolio_img-container">
+          <div class="portfolio_view-more services_button">
+            Click to View <br />
+            More
           </div>
+          <img
+            src="${project.image}"
+            class="portfolio_img"
+            alt="${project.title}"
+          />
         </div>
+
+        <h3 class="portfolio_title">${project.title}</h3>
+        <p class="portfolio_description">${project.description}</p>
       </div>
-      <div class="portfolio_data">
-        <div class="portfolio_header">
-          <h3 class="portfolio_title">${project.title}</h3>
-          <span class="portfolio_date">
+
+      <div class="portfolio_right">
+      <span class="portfolio_date">
             <i class="uil uil-calender-alt"></i>
             ${project.date}
           </span>
+      <div class="portfolio_bottom_meta">
+      
+          <span class="portfolio_category">${project.category}</span>
+          <span class="portfolio_difficulty portfolio_difficulty--${project.difficulty.toLowerCase()}">${
+        project.difficulty
+      }</span>
         </div>
-        <p class="portfolio_description">${project.description}</p>
+        <div class="portfolio_tech">
+          ${project.technologies
+            .map((tech) => `<span class="portfolio_tech-tag">${tech}</span>`)
+            .join("")}
+        </div>
+
+        <div class="portfolio_features">
+          <div class="portfolio_features_title">Key Features</div>
+          ${project.keyFeatures
+            .map(
+              (feature) =>
+                `<div class="portfolio_feature-item">✓ ${feature}</div>`
+            )
+            .join("")}
+        </div>
+
         <div class="portfolio_btns">
           ${project.buttons
             .map(
@@ -539,6 +539,40 @@ function renderProjects() {
   `
     )
     .join("");
+
+  const modalsHTML = projectsData
+    .map(
+      (project) => `
+    <div class="services_modal">
+      <div class="services_modal-content">
+        <i class="uil uil-times services_modal-close"></i>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            ${project.gallery
+              .map(
+                (img) => `
+              <div class="swiper-slide">
+                <img src="${img}" alt="" />
+              </div>
+            `
+              )
+              .join("")}
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  `
+    )
+    .join("");
+
+  portfolioWrapper.innerHTML = projectsHTML + modalsHTML;
 }
 
 function renderContact() {
