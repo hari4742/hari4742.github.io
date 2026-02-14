@@ -1,0 +1,428 @@
+{
+  "home": {
+    "title": "Hi, I'am Hari Kiran",
+    "subtitle": "Computer Science Student",
+    "description": "I'm an aspiring software developer, data scientist, and full-stack developer, working with my hands to make magic happen on the internet.",
+    "socials": [
+      {
+        "url": "https://www.linkedin.com/in/hari-k-a18b66105/",
+        "icon": "uil-linkedin-alt"
+      },
+      {
+        "url": "https://github.com/hari4742",
+        "icon": "uil-github-alt"
+      },
+      {
+        "url": "https://www.instagram.com/__hari_kiran__/",
+        "icon": "uil-instagram"
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My Introduction",
+    "image": "./assets/images/hari_cuh_bg.jpg",
+    "description": "Hi, I'm Hari Kiran Kante, currently studying M.Tech, Computer Science and Technology at the Vellore Institute of Technology, Chennai.<br /><br />I love to <i>design</i> things, <i>build</i> them and <i>break</i> them just to see how strong I made them. <br /><br />On my journey into the fascinating world of technology, I have learned a few programming languages such as <b>Python</b>, and <b>C++</b> , as well as <b>React Js</b>, a powerful front-end library, and everyone's favorite <b>Node Js</b>. Finally, it wasn't too late before I realized that <b>DATA</b> can answer your questions if you really know how to ask them.",
+    "resumeUrl": "./assets/resume/hari_resume_latest.pdf"
+  },
+  "skills": [
+    {
+      "title": "Programming Languages",
+      "subtitle": "More than 3 years",
+      "icon": "uil-arrow",
+      "skills": [
+        {
+          "name": "Python",
+          "percentage": 85
+        },
+        {
+          "name": "C++",
+          "percentage": 75
+        },
+        {
+          "name": "Java Script",
+          "percentage": 90
+        },
+        {
+          "name": "SQL",
+          "percentage": 70
+        }
+      ]
+    },
+    {
+      "title": "Frontend Development",
+      "subtitle": "More than 3 years",
+      "icon": "uil-brackets-curly",
+      "skills": [
+        {
+          "name": "HTML",
+          "percentage": 95
+        },
+        {
+          "name": "CSS",
+          "percentage": 90
+        },
+        {
+          "name": "React JS",
+          "percentage": 70
+        }
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "subtitle": "More than 2 years",
+      "icon": "uil-server-network",
+      "skills": [
+        {
+          "name": "Node Js",
+          "percentage": 80
+        },
+        {
+          "name": "Firebase",
+          "percentage": 70
+        },
+        {
+          "name": "Django",
+          "percentage": 50
+        }
+      ]
+    },
+    {
+      "title": "LLM Development",
+      "subtitle": "More than 1 years",
+      "icon": "uil-brain",
+      "skills": [
+        {
+          "name": "Langchain",
+          "percentage": 90
+        },
+        {
+          "name": "Prompt Engineering",
+          "percentage": 70
+        }
+      ]
+    },
+    {
+      "title": "Data Science",
+      "subtitle": "More than a year",
+      "icon": "uil-chart-line",
+      "skills": [
+        {
+          "name": "Pandas & Numpy",
+          "percentage": 85
+        },
+        {
+          "name": "Matplotlib",
+          "percentage": 75
+        },
+        {
+          "name": "Machine Learning",
+          "percentage": 70
+        },
+        {
+          "name": "Power BI",
+          "percentage": 60
+        }
+      ]
+    },
+    {
+      "title": "Designing",
+      "subtitle": "More than 2 years",
+      "icon": "uil-paint-tool",
+      "skills": [
+        {
+          "name": "Figma",
+          "percentage": 70
+        },
+        {
+          "name": "Canva",
+          "percentage": 80
+        }
+      ]
+    },
+    {
+      "title": "Tools",
+      "subtitle": "More than 3 years",
+      "icon": "uil-wrench",
+      "skills": [
+        {
+          "name": "Git & GitHub",
+          "percentage": 90
+        },
+        {
+          "name": "Data Structures & Algorithms",
+          "percentage": 70
+        },
+        {
+          "name": "Linux",
+          "percentage": 70
+        },
+        {
+          "name": "VS Code",
+          "percentage": 90
+        }
+      ]
+    }
+  ],
+  "qualifications": {
+    "education": [
+      {
+        "title": "Computer Science Engineer, M.Tech",
+        "subtitle": "VIT, Chennai",
+        "date": "2024-2026"
+      },
+      {
+        "title": "Computer Science Engineer",
+        "subtitle": "Central University of Haryana",
+        "date": "2020-2024"
+      },
+      {
+        "title": "PCM 12th",
+        "subtitle": "AP Residential Junior College, Guntur",
+        "date": "2018-2020"
+      }
+    ],
+    "work": [
+        {
+        "title": "Android Developer Intern",
+        "subtitle": "Signify (Formerly Philips)",
+        "date": "Sep 2025 - May 2026"
+      },
+      {
+        "title": "Frontend Developer Intern",
+        "subtitle": "Elevate HQ",
+        "date": "May 2024 - Aug 2024"
+      },
+      {
+        "title": "Software Developer Intern",
+        "subtitle": "ZedBlock IT Solutions India",
+        "date": "Mar 2023 - Mar 2024"
+      },
+      {
+        "title": "Mentor in a Coding Club",
+        "subtitle": "Bytecode Learners Club CUH",
+        "date": "2021-2022"
+      }
+    ]
+  },
+  "blogs": [
+    {
+      "title": "Types of Functions in Java Script",
+      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1696760043486/2457a94d-ac90-4f6b-9d10-338f2ddd2f8c.png",
+      "url": "https://harikirankante.hashnode.dev/types-of-functions-in-java-script"
+    },
+    {
+      "title": "useRef Hook in React Explained",
+      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1696161258741/45ed65c2-64b6-4ee8-96c7-0bcd232860ed.png",
+      "url": "https://harikirankante.hashnode.dev/useref-hook-in-react-explained"
+    },
+    {
+      "title": "Save Data to MongoDB from CSV",
+      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1697372924799/5da468e6-d213-44ef-8501-0f93d8a4eb6e.png",
+      "url": "https://harikirankante.hashnode.dev/how-to-save-data-to-mongodb-from-a-csv-file-using-mongoose-in-nodejs"
+    },
+    {
+      "title": "Summarize with Langchain",
+      "image": "https://cdn.hashnode.com/res/hashnode/image/upload/v1695574317310/4b203260-ad30-4b68-b428-89e0db05198f.png",
+      "url": "https://harikirankante.hashnode.dev/how-to-summarize-large-documents-using-langchain-and-openai-in-python"
+    }
+  ],
+  "projects": [
+    {
+      "title": "HaSh - Hari's Shell",
+      "description": "🐚 HaSh (Hari's Shell) is a custom POSIX-compliant shell built from scratch in Java as a learning project. The goal of this project is to explore system programming concepts, shell internals, and command parsing while gradually adding new features",
+      "image": "./assets/images/projects/hash/hash_banner.jpg",
+      "gallery": [
+        "./assets/images/projects/hash/hash_banner.jpg",
+        "./assets/images/projects/hash/navigation.jpg",
+        "./assets/images/projects/hash/redirection.jpg",
+        "./assets/images/projects/hash/cmd_auto_completion.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://github.com/hari4742/HaSh",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Pylox",
+      "description": "🦊 A Python-based frontend for a Lox interpreter, handling lexical analysis, parsing, and abstract syntax tree generation.",
+      "image": "./assets/images/projects/pylox/pylox_function.jpg",
+      "gallery": [
+        "./assets/images/projects/pylox/pylox_grammer.jpg",
+        "./assets/images/projects/pylox/pylox_closure.jpg",
+        "./assets/images/projects/pylox/pylox_function.jpg",
+        "./assets/images/projects/pylox/pylox_tokenize.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://github.com/hari4742/pylox",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Google Meet Assistance",
+      "description": "During my internship at Zedblock, I worked on an AI project where users could talk to LLM agents in real time, modify prompts, and create multiple agents for personalized interactions. Check the demo! You will be suprized!😉.",
+      "image": "./assets/images/projects/gmeet_agent/gmeet_demo.png",
+      "gallery": [
+        "./assets/images/projects/gmeet_agent/gmeet_demo.png",
+        "./assets/images/projects/gmeet_agent/ui_agent.png"
+      ],
+      "buttons": [
+        {
+          "text": "View Demo",
+          "url": "https://drive.google.com/file/d/1BxUHYtLXUIJkDPehMwN_2-kQ_4_uNfax/view?usp=drive_link",
+          "icon": "uil-caret-right"
+        }
+      ]
+    },
+    {
+      "title": "Digital Library",
+      "description": "A Full stack project using React JS and Node JS. In this website, Users can signup, read books online, search and filter for books, add reviews and rating, and add books to their personal collection.",
+      "image": "./assets/images/projects/digital_library/home.jpg",
+      "gallery": [
+        "./assets/images/projects/digital_library/home.jpg",
+        "./assets/images/projects/digital_library/login.jpg",
+        "./assets/images/projects/digital_library/signup.jpg",
+        "./assets/images/projects/digital_library/books.jpg",
+        "./assets/images/projects/digital_library/books_search.jpg",
+        "./assets/images/projects/digital_library/book.jpg",
+        "./assets/images/projects/digital_library/reviews.jpg",
+        "./assets/images/projects/digital_library/profile_avtar.jpg",
+        "./assets/images/projects/digital_library/collections.jpg",
+        "./assets/images/projects/digital_library/my_reviews.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://github.com/hari4742/digital_library_project_full_stack",
+          "icon": "uil-github",
+          "target": "_blank"
+        },
+        {
+          "text": "View Demo",
+          "url": "https://drive.google.com/file/d/1ZX534whqLIO0BQBF5_jBRYUC4hJ4lavm/view?usp=sharing",
+          "icon": "uil-caret-right"
+        }
+      ]
+    },
+    {
+      "title": "Statistic Calculator",
+      "description": "Website Where we can do statistical calculations. Made using HTML, CSS & Vannila JS. Implemented few advanced calculations like kurtosis, skewness, moments etc..",
+      "image": "./assets/images/projects/statistic_calculator/home.jpg",
+      "gallery": [
+        "./assets/images/projects/statistic_calculator/home.jpg",
+        "./assets/images/projects/statistic_calculator/sample1.jpg",
+        "./assets/images/projects/statistic_calculator/sample2.jpg",
+        "./assets/images/projects/statistic_calculator/sample3.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://github.com/hari4742/statistic_calculator_v_2",
+          "icon": "uil-github",
+          "target": "_blank"
+        },
+        {
+          "text": "View Demo",
+          "url": "https://hari4742.github.io/statistic_calculator_v_2/",
+          "icon": "uil-caret-right",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Re-selling Platform",
+      "description": "Made Using React and Node.This website makes it easy to connect students within the cuh campus to buy , sell or exchange used goods. It can be used from on laptop and mobile phones.",
+      "image": "./assets/images/projects/u_cell/home.jpg",
+      "gallery": [
+        "./assets/images/projects/u_cell/home.jpg",
+        "./assets/images/projects/u_cell/signup_page.jpg",
+        "./assets/images/projects/u_cell/sell_product.jpg",
+        "./assets/images/projects/u_cell/products.jpg",
+        "./assets/images/projects/u_cell/product.jpg",
+        "./assets/images/projects/u_cell/about_us.jpg",
+        "./assets/images/projects/u_cell/footer.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://github.com/hari4742/reselling_platform-Science_Day",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Web Scraping Using Python",
+      "description": "A Project to scrap data about Science fiction movies from the popular IMDB website using Beautiful Soup Library in Python.",
+      "image": "./assets/images/projects/web_scraping/img1.jpg",
+      "gallery": [
+        "./assets/images/projects/web_scraping/img1.jpg",
+        "./assets/images/projects/web_scraping/sample_data.jpg",
+        "./assets/images/projects/web_scraping/certificate_vs_votes.jpg",
+        "./assets/images/projects/web_scraping/pg-13.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://colab.research.google.com/drive/1iGx2SiaArDK5DnwuhLNxt6V7HB6W3Vnr?usp=sharing",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    },
+    {
+      "title": "Credit Card Fraud Detection Using ML",
+      "description": "A Data Science project to detect whether a transaction is fraudulent or not, using ML models in Python. In this project, data is preprocessed, analyzed, 5 ML models are built and compared.",
+      "image": "./assets/images/projects/credit_card_fraud_detection/home.jpg",
+      "gallery": [
+        "./assets/images/projects/credit_card_fraud_detection/home.jpg",
+        "./assets/images/projects/credit_card_fraud_detection/f1_score.jpg",
+        "./assets/images/projects/credit_card_fraud_detection/recall_vs_precision.jpg",
+        "./assets/images/projects/credit_card_fraud_detection/confusion_matrix.jpg",
+        "./assets/images/projects/credit_card_fraud_detection/roc.jpg"
+      ],
+      "buttons": [
+        {
+          "text": "Source Code",
+          "url": "https://colab.research.google.com/drive/1vZRdweDIFV4WGz_yUjwYf54uNSPblrLS",
+          "icon": "uil-github",
+          "target": "_blank"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch",
+    "phone": "+91 7680802969",
+    "email": "harikiran.kante@gmail.com",
+    "location": "India"
+  },
+  "footer": {
+    "name": "Hari",
+    "role": "Computer Science Student",
+    "socials": [
+      {
+        "url": "https://www.facebook.com/profile.php?id=100008771017562",
+        "icon": "uil-facebook-f"
+      },
+      {
+        "url": "https://www.instagram.com/__hari_kiran__/",
+        "icon": "uil-instagram"
+      },
+      {
+        "url": "https://twitter.com/hari4742",
+        "icon": "uil-twitter-alt"
+      }
+    ],
+    "credit": "Made with <span class=\"love\"> </span> by Hari with the help of <a href=\"https://www.youtube.com/@Bedimcode\" target=\"_blank\">Bedimcode</a>"
+  }
+}
