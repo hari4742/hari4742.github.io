@@ -69,16 +69,18 @@ let swiper = null;
 function initSwiper() {
   const containers = document.querySelectorAll(".swiper-container");
   if (containers.length > 0 && typeof Swiper !== "undefined") {
-    swiper = new Swiper(containers[0], {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+    containers.forEach((container) => {
+      new Swiper(container, {
+        cssMode: true,
+        navigation: {
+          nextEl: container.querySelector(".swiper-button-next"),
+          prevEl: container.querySelector(".swiper-button-prev"),
+        },
+        pagination: {
+          el: container.querySelector(".swiper-pagination"),
+          clickable: true,
+        },
+      });
     });
   }
 }
